@@ -13,8 +13,10 @@ function addToDOM() {
   itemArray.push(input.value);
   console.log(itemArray);
 
-  let item = document.createElement('h2');
+  let item = document.createElement('h3');
+  let insideTitle = document.getElementById('insideTitle');
   item.innerHTML = input.value;
+  item.setAttribute('class', 'todoItems');
   document.body.appendChild(item);
   input.value = "";
 }
