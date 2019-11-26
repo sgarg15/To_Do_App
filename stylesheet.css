@@ -1,29 +1,35 @@
 
 body {
   background-color: #878787;
-  width: 1000px;
-  height: 100px;
 }
 
 .title {
   background: rgb(17, 204, 237);
-  width: 1270px;
+  width: 90%;
   height: 30px;
   padding: 30px;
   border-radius: 30px;
+  margin: auto;
   position: relative;
-  top: 0px;
-  left: 12px;
 }
 
 #insideTitle {
   background: rgb(123, 228, 237);
-  width: 122%;
+  width: 85%;
   height: 30px;
   padding: 20px;
   border-radius: 20px;
+  border: none;
   margin:auto;
   position: relative;
   top: -82px;
-  left: 45px;
+  left: 85px;
+}
+
+.todoItems {
+  color: #ffffff;
+  text-align: left;
+  position: relative;
+  top: -70px;
+  left: 90px;
 }
