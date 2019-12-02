@@ -10,12 +10,24 @@ document.addEventListener('keypress', function (e) {
     }
 });
 
+var remove = document.createElement('svg');
+remove.innerHTML = deleteIcon;
+
+function removeToDo() {
+  console.log(this);
+  var item = this.parentNode;
+  item.remove();
+}
+
 function addToDOM() {
   itemArray.push(input.value);
   console.log(itemArray);
 
   let item = document.createElement('h3');
   let icon = document.createElement('svg');
+
+  icon.addEventListener('click', removeToDo);
+
   icon.innerHTML = deleteIcon;
   let itemListing = document.getElementById('itemList');
   let insideTitle = document.getElementById('insideTitle');
