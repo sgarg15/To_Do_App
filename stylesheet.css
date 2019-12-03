@@ -50,7 +50,7 @@ body {
   word-break: break-word;
 }
 
-#delete {
+.delete {
   position: absolute;
   top: -30px;
   left: 1200px;
